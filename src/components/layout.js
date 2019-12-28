@@ -13,7 +13,7 @@ export default ({ children }) => (
   <div className="wrapper">
     <header className="header">
       <Link to="/" style={{ textShadow: "none", backgroundImage: "none" }}>
-        <h3 className='header-heading'>aleksanderwalczuk.surge.sh</h3>
+        <h3 className='heading header-heading'>aleksanderwalczuk.surge.sh</h3>
       </Link>
       <ul>
         <NavLink to="/">Home</NavLink>
