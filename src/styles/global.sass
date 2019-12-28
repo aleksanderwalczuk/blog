@@ -43,7 +43,7 @@
   padding: 0 1rem
   margin: calc( 73px + 1rem) auto 0
   background: #fff
-  
+
 .article
   margin: 1rem 0
 
@@ -53,5 +53,11 @@
   &-heading
     &-container
       @include flex(space-between, center)
-
+    &-author
+      font-style: italic
+  &-img
+    &-container
+      @include flex(center, center, row )
+  &-paragraph
+    padding: 1rem
     margin:  0 0 0.67em
