@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./about-css-modules.module.css"
+import styles from "./about-me.module.css"
 import Container from "../components/container"
 
 const User = props => (
@@ -13,8 +13,9 @@ const User = props => (
 )
 export default () => (
   <Container>
-    <h1>About CSS Modules</h1>
-    <p>CSS Modules are cool</p>
+    <h1>About me</h1>
+    <p>I’m good enough, I’m smart enough, and gosh darn it, people like me!</p>
+    
     <User
       username="John Doe"
       avatar="https://picsum.photos/seed/picsum/100/200"
