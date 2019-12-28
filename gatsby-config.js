@@ -6,13 +6,21 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: `I like Google fonts`
+  },
   plugins: [
     'gatsby-plugin-sass',
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
+        fonts: [
+          `Exo\:700`,
+          `Yrsa\:300,400,400i,700` // you can also specify font weights and styles
+        ],
+        display: 'swap',
+        subset: 'latin-ext'
+      }
+    }
   ]
 }
