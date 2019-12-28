@@ -3,7 +3,6 @@ import Layout from "../components/layout"
 import { Post } from "../components/post"
 import { Link } from "gatsby"
 
-const time = new Date().toLocaleDateString()
 const postImgs = [
   "https://pixabay.com/get/57e0d2454f51aa14f1dc8460825668204022dfe05456744e772c78d2/code-1076536_640.jpg",
 ]
