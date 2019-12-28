@@ -1,20 +1,17 @@
 import React from "react"
-import styles from "./about-me.module.css"
-import Container from "../components/container"
 import Layout from "../components/layout"
 
 const User = props => (
-  <div className={styles.user}>
+  <div className={''}>
     <img src={props.avatar} alt="" />
-    <div className={styles.description}>
-      <h2 className={styles.username}>{props.username}</h2>
-      <p className={styles.excerpt}>{props.excerpt}</p>
+    <div className={''}>
+      <h2 className={''}>{props.username}</h2>
+      <p className={''}>{props.excerpt}</p>
     </div>
   </div>
 )
 export default () => (
   <Layout>
-    <Container>
       <h1>About me</h1>
       <p>
         I’m good enough, I’m smart enough, and gosh darn it, people like me!
@@ -30,6 +27,5 @@ export default () => (
         avatar="https://picsum.photos/100/200?grayscale"
         excerpt="Hi! My name is Jane Doe. "
       />
-    </Container>
   </Layout>
 )
