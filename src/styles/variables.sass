@@ -4,6 +4,12 @@
 body
   margin: 0
   padding: 0
-  
+
 $font-primary: Exo, sans-serif
 $font-secondary: Yrsa, sans-serif
+
+@mixin flex($position: normal, $alignment: normal, $direction: row)
+  display: flex
+  flex-direction: $direction
+  justify-content: $position
+  align-items: $alignment
