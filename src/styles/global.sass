@@ -14,9 +14,7 @@
   position: fixed
   top: 0
   left: 0
-  display: flex
-  align-items: center
-  justify-content: space-between
+  @include flex(space-between, center)
   margin: 0 0 1rem 0
   width: 100vw
   padding: 1rem
@@ -55,7 +53,7 @@
       @include flex(space-between, center)
   &-img
     &-container
-      @include flex(center, center, row )
+      @include flex(center)
   &-paragraph
     padding: 1rem
     margin:  0 0 0.67em
