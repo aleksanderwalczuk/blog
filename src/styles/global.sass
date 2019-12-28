@@ -1,20 +1,29 @@
+@import './variables.sass'
 .wrapper
-  min-height: 100vh
+  font-family: $font-secondary
+  position: relative
   width: 100vw
-  margin: 0 auto
-  // color: #fff
+  overflow-y: hidden
+  font-size: 20px
 
+.heading
+  font-family: $font-primary
 .header
+  position: fixed
+  top: 0
+  left: 0
   display: flex
   align-items: center
   justify-content: space-between
   margin: 0 0 1rem 0
+  width: 100vw
   padding: 1rem
   background-color: purple
   &-heading
     display: inline
     color: #fff
-    
+
+
   & ul
     margin: 0
 
@@ -24,8 +33,9 @@
   margin: 0 1rem 0 0
 .main
   max-width: 1024px
+  min-height: calc(100vh - calc(73px + 1rem))
   padding: 0 1rem
-  margin: 0 auto
+  margin: calc( 73px + 1rem) auto 0
 a
   text-shadow: none
   background-image: none
