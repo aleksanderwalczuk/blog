@@ -1,8 +1,26 @@
-import React from 'react';
+import React from "react"
+import { Link } from "gatsby"
 
-export default ({children}) => (
-  <div style={{margin: '3rem auto', maxWidth: 650, padding: '0 1rem'}}>
-    <h3>My Sweetsite</h3>
-    {children}
+const NavLink = props => (
+  <li className="navlink">
+    <Link to={props.to} style={{ color: "#fff"}}>
+      {props.children}
+    </Link>
+  </li>
+)
+
+export default ({ children }) => (
+  <div className="wrapper">
+    <header className="header">
+      <Link to="/" style={{ textShadow: "none", backgroundImage: "none" }}>
+        <h3 className='header-heading'>aleksanderwalczuk.surge.sh</h3>
+      </Link>
+      <ul>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/about-me">O mnie</NavLink>
+        <NavLink to="/contact">Kontakt</NavLink>
+      </ul>
+    </header>
+    <main className="main">{children}</main>
   </div>
 )
