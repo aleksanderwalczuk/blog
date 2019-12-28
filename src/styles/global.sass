@@ -5,6 +5,7 @@
   width: 100vw
   overflow-y: hidden
   font-size: 20px
+  font-weight: 400
 
 .heading
   font-family: $font-primary
@@ -30,7 +31,12 @@
 .navlink
   display: inline
   color: #fff
-  margin: 0 1rem 0 0
+  &-item
+    color: #fff
+    padding: .5rem
+    display: inline-block
+    text-align: center
+
 .main
   max-width: 1024px
   min-height: calc(100vh - calc(73px + 1rem))

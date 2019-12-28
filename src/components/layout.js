@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 const NavLink = props => (
   <li className="navlink">
-    <Link to={props.to} style={{ color: "#fff"}}>
+    <Link to={props.to} className='navlink-item'>
       {props.children}
     </Link>
   </li>
