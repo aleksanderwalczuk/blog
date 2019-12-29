@@ -32,7 +32,7 @@ const time = new Date("2019-12-28").toLocaleDateString()
 
 export default () => (
   <Post
-    postHeading="Dodatki do VS Code, mój config"
+    postHeading="Dodatki do VS Code"
     imgSrc={postImgs[0]}
     time={time}
   >
