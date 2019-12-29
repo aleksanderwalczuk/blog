@@ -1,15 +1,6 @@
 import React from "react"
 
-export const ListItem = props => (
-  <li>
-    {props.category}
-    <ul>
-      {props.arr.map(item => (
-        <li key={item}>{item}</li>
-      ))}
-    </ul>
-  </li>
-)
+
 
 export const Post = (props) => (
   <section className="post">

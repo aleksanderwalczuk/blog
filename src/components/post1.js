@@ -1,5 +1,5 @@
 import React from "react"
-import { Post, ListItem } from "./posts"
+import { Post } from "./posts"
 import { Link } from "gatsby"
 import img1 from "../../static/code-1076536_640.jpg"
 
@@ -56,6 +56,20 @@ const extenstionsNames = [
   { name: "Live Share", description: "" },
   { name: "markdownlint", description: "" },
 ]
+
+export const ListItem = props => (
+  <li>
+    {props.category}
+    <ul>
+      {props.arr.map(item => (
+        <li key={item.name}>
+          <span>{item.name}</span>
+          <span>{item.description}</span>
+        </li>
+      ))}
+    </ul>
+  </li>
+)
 
 const postImgs = [img1]
 
