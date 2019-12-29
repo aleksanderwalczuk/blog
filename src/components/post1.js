@@ -64,7 +64,7 @@ time={time}
   post z kategorii środowiska deweloperskiego. Jeśli zupełnie
   niespodziewacie się co to mogą być za dodatki, możecie rzucić okiem na
   sekcję&nbsp;
-  <Link to="about-me" className="post-link">
+  <Link to="./about-me" className="post-link">
     O mnie
   </Link>
   . VSC to mój edytor nr. 1, chociaż wolę korzystać z IDE, a dokładniej
