@@ -1,31 +1,51 @@
 import React from "react"
 import Layout from "../components/layout"
+import aboutImg from "../../static/about.jpg"
+import { Link } from "gatsby"
 
-const User = props => (
-  <div className={''}>
-    <img src={props.avatar} alt="" />
-    <div className={''}>
-      <h2 className={''}>{props.username}</h2>
-      <p className={''}>{props.excerpt}</p>
+const timeOld = new Date("1970-01-01").toLocaleDateString()
+const time = new Date("2019-12-28").toLocaleDateString()
+
+export const Post = props => (
+  <section className="post">
+    <div className="post-heading-container">
+      <h3 className="heading post-heading">{props.postHeading}</h3>
+      <span>{props.time}</span>
     </div>
-  </div>
+    <div>{props.children}</div>
+  </section>
 )
+
 export default () => (
   <Layout>
-      <h1>About me</h1>
-      <p>
-        I’m good enough, I’m smart enough, and gosh darn it, people like me!
-      </p>
-
-      <User
-        username="John Doe"
-        avatar="https://picsum.photos/seed/picsum/100/200"
-        excerpt="Hi! My name is John Doe."
-      />
-      <User
-        username="Jane Doe"
-        avatar="https://picsum.photos/100/200?grayscale"
-        excerpt="Hi! My name is Jane Doe. "
-      />
+    <h1 className="heading">O mnie, współpraca</h1>
+    <div className="about">
+      <Post postHeading="Krótko:" time={timeOld}>
+        <div className="about-author">
+          <img src={aboutImg} alt="author img" className="about-author-img" />
+          <p className="post-paragraph about-author-paragraph">
+            Nazywam się Aleksander Walczuk. Jestem programistą, tenisistą i
+            narciarzem. Stworzyłem ten blog by podzielić się swoim podejściem do
+            frontendu oraz pokazać jak to jest być początkującym w tej branży.
+            Chętnie współpracuję i uczę się nowych technologii. Masz pomysł na apkę?
+            Szukasz osób do pracy? Zapraszam, odwiedź zakładkę <Link to='./contact.js' className='post-link'>Kontakt.</Link>
+          </p>
+          <p className="post-paragraph"></p>
+        </div>
+      </Post>
+      <Post postHeading="Trochę dłużej:" time={time}>
+        <p className="post-paragraph">
+          Frontendu uczyłem się nieregularnie, zacząłem na początku 2018r.
+          Jestem samoukiem, jednak pod koniec 2019r zdecydowałem się na
+          uczestnictwo w bootcampie. Mam solidne podstawy w kodowaniu stron
+          statycznych, aktualnie poznaję JAM-Stacki. Moje  <strong>źródła wiedzy</strong> to:
+          FreeCodeCamp, Medium, MDN, kanały youtube takie jak: Traversy Media,
+          helloroman. Aktualnie poznaję Gatsby.js i GraphQL. Mój <strong>stack
+          technologiczny</strong> w tej chwili to HTML, CSS, Sass, JS ES6, React, Redux i
+          podstawy PHP. Brałem udział w warsztatach Webcamp #6, meetupach,
+          targach i bootcampie organizowanym przez infoShare Academy.
+        </p>
+      </Post>
+    </div>
   </Layout>
 )
