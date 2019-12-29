@@ -22,5 +22,6 @@ export default ({ children }) => (
       </ul>
     </header>
     <main className="main">{children}</main>
+    <footer className="footer"> <span>&copy; rednaxela700</span></footer>
   </div>
 )
