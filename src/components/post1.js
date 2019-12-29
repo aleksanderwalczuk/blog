@@ -45,7 +45,7 @@ export default () => (
         O mnie
       </Link>
       . VSC to mój edytor nr. 1, chociaż wolę korzystać z IDE, a dokładniej
-      Webstorma 🧐. Postaram się je podzielić na kategorie i posortować. Opiszę
+      Webstorma. Postaram się je podzielić na kategorie i posortować. Opiszę
       też te, które mogą być warte uwagi, a ich nazwa nie mówi sama za siebie.
       Oglądajcie, testujcie:
     </p>

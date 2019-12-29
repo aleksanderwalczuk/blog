@@ -20,7 +20,7 @@ export default () => (
   <Layout>
     <h1 className="heading">O mnie, współpraca</h1>
     <div className="about">
-      <Post postHeading="Krótko:" time={timeOld}>
+      <Post postHeading="Krótko:" time={timeOld + ' ;-)'}>
         <div className="about-author">
           <img src={aboutImg} alt="author img" className="about-author-img" />
           <p className="post-paragraph about-author-paragraph">
