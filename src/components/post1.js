@@ -20,7 +20,13 @@ const codecompletion = [
   { name: "Visual Studio Intellisense", description: "" },
   { name: "JS JSX Snippets", description: "" },
 ]
-const git = ["gi", "Git Blame", "Git Graph", "GitLens", "Ignore files"]
+const git = [
+  { name: "gi", description: "" },
+  { name: "Git Blame", description: "" },
+  { name: "Git Graph", description: "" },
+  { name: "GitLens", description: "" },
+  { name: "Ignore files", description: "" },
+]
 const sass = [
   { name: "Live Sass Compiler", description: "" },
   { name: "Sass", description: "" },
