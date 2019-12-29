@@ -65,7 +65,7 @@ export default () => (
     <div className="aside">
       <h1 className="heading">Witaj świecie</h1>
       <p>
-        W tym miejscu znajdą się moje zapiski, początkującego frontend deva!
+        To tylko kolejny blog technologiczny...
       </p>
     </div>
     <article className="article">
