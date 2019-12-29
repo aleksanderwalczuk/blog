@@ -1,61 +1,16 @@
 import React from "react"
 import { Post } from "./posts"
 import { Link } from "gatsby"
+import {
+  codecompletion,
+  extenstionsNames,
+  formatters,
+  git,
+  look,
+  preview,
+  sass,
+} from "./post1data"
 import img1 from "../../static/code-1076536_640.jpg"
-
-const look = [
-  { name: "Material Icon Theme", description: "" },
-  { name: "One Dark Pro", description: "" },
-  { name: "VSCode Great Icons", description: "" },
-]
-
-const codecompletion = [
-  { name: "Auto Rename Tag", description: "" },
-  { name: "Color Picker", description: "" },
-  { name: "Intellisense for CSS", description: "" },
-  { name: "Path Intellisense", description: "" },
-  { name: "docs-markdown", description: "" },
-  { name: "JavaScript ES6 code snippets", description: "" },
-  { name: "ES7 React/Redux/GraphQL/ReactNative snippets", description: "" },
-  { name: "Visual Studio Intellisense", description: "" },
-  { name: "JS JSX Snippets", description: "" },
-]
-const git = [
-  { name: "gi", description: "" },
-  { name: "Git Blame", description: "" },
-  { name: "Git Graph", description: "" },
-  { name: "GitLens", description: "" },
-  { name: "Ignore files", description: "" },
-]
-const sass = [
-  { name: "Live Sass Compiler", description: "" },
-  { name: "Sass", description: "" },
-  { name: "Sass Yah", description: "" },
-  { name: "CSS Peek", description: "" },
-  { name: "SCSS Intellisense", description: "" },
-]
-
-const formatters = [
-  { name: "Beautify", description: "" },
-  { name: "Preetier - Code formatter", description: "" },
-  { name: "Trailing Spaces", description: "" },
-  { name: "Paste and Indent", description: "" },
-]
-const preview = [
-  { name: "Live Server", description: "" },
-  { name: "Markdown Preview Enchanced", description: "" },
-  { name: "Quokka.js", description: "" },
-  { name: "Image preview", description: "" },
-]
-const extenstionsNames = [
-  { name: "Bracket Pair Colorizer", description: "" },
-  { name: "Debugger for Chrome", description: "" },
-  { name: "ES Lint", description: "" },
-  { name: "Indented Block Highlighting", description: "" },
-  { name: "JetBrains IDE Keymap", description: "" },
-  { name: "Live Share", description: "" },
-  { name: "markdownlint", description: "" },
-]
 
 export const ListItem = props => (
   <li>
