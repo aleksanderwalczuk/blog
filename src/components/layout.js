@@ -12,7 +12,7 @@ const NavLink = props => (
 export default ({ children }) => (
   <div className="wrapper">
     <header className="header">
-      <Link to="/" style={{ textShadow: "none", backgroundImage: "none" }}>
+      <Link to="/" style={{ textShadow: "none", backgroundImage: "none" }} className='header-logo'>
         <h3 className='heading header-heading'>aleksanderwalczuk.surge.sh</h3>
       </Link>
       <ul>
