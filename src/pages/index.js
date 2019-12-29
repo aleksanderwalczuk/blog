@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import { Post } from "../components/post"
+import { Post } from "../components/posts"
 import { Link } from "gatsby"
 import img1 from "../../static/code-1076536_640.jpg"
 
@@ -54,13 +54,13 @@ const ListItem = props => (
     {props.category}
     <ul>
       {props.arr.map(item => (
-        <li>{item}</li>
+        <li key={item}>{item}</li>
       ))}
     </ul>
   </li>
 )
 
-const time = new Date(2019, 12, 28).toLocaleDateString("pl")
+const time = new Date("2019-12-28").toLocaleDateString()
 
 export default () => (
   <Layout>
