@@ -2,10 +2,9 @@ import React from "react"
 import Layout from "../components/layout"
 import { Post } from "../components/post"
 import { Link } from "gatsby"
+import img1 from "../../static/code-1076536_640.jpg"
 
-const postImgs = [
-  "https://pixabay.com/get/57e0d2454f51aa14f1dc8460825668204022dfe05456744e772c78d2/code-1076536_640.jpg",
-]
+const postImgs = [img1]
 const look = ["Material Icon Theme", "One Dark Pro", "VSCode Great Icons"]
 
 const codecompletion = [
@@ -60,36 +59,44 @@ const ListItem = props => (
     </ul>
   </li>
 )
+
+const time = new Date(2019, 12, 28).toLocaleDateString("pl")
+
 export default () => (
   <Layout>
     <div className="aside">
       <h1 className="heading">Witaj świecie</h1>
-      <p>
-        To tylko kolejny blog technologiczny...
-      </p>
+      <p>To tylko kolejny blog technologiczny...</p>
     </div>
     <article className="article">
-      <Post postHeading="Dodatki do VS Code, mój config" imgSrc={postImgs[0]}>
+      <Post
+        postHeading="Dodatki do VS Code, mój config"
+        imgSrc={postImgs[0]}
+        time={time}
+      >
         <p className="post-paragraph">
           Cześć i czołem! <br /> Słowem wstępu postanowiłem podzielić się z Wami
-          listą dodatków do VS Code z jakich korzystam. Jeśli zupełnie
+          listą dodatków do VS Code z jakich korzystam. Będzie to też pierwszy
+          post z kategorii środowiska deweloperskiego. Jeśli zupełnie
           niespodziewacie się co to mogą być za dodatki, możecie rzucić okiem na
           sekcję&nbsp;
-          <Link to="about-me">O mnie</Link>. VSC to mój edytor nr. 1, chociaż
-          wolę korzystać z IDE, a dokładniej Webstorma. Postaram się je
-          podzielić na kategorie i posortować. Opiszę też te, które mogą być
-          warte uwagi, a ich nazwa nie mówi sama za siebie. Oglądajcie,
-          testujcie:
-          <ol>
-            <ListItem category="Wygląd: " arr={look} />
-            <ListItem category="Formattery: " arr={formatters} />
-            <ListItem category="Code Completion: " arr={codecompletion} />
-            <ListItem category="Sass/CSS: " arr={sass} />
-            <ListItem category="Live preview: " arr={preview} />
-            <ListItem category="Git: " arr={git} />
-            <ListItem category="Pozostałe: " arr={extenstionsNames} />
-          </ol>
+          <Link to="about-me" className="post-link">
+            O mnie
+          </Link>
+          . VSC to mój edytor nr. 1, chociaż wolę korzystać z IDE, a dokładniej
+          Webstorma. Postaram się je podzielić na kategorie i posortować. Opiszę
+          też te, które mogą być warte uwagi, a ich nazwa nie mówi sama za
+          siebie. Oglądajcie, testujcie:
         </p>
+        <ol>
+          <ListItem category="Wygląd: " arr={look} />
+          <ListItem category="Formattery: " arr={formatters} />
+          <ListItem category="Code Completion: " arr={codecompletion} />
+          <ListItem category="Sass/CSS: " arr={sass} />
+          <ListItem category="Live preview: " arr={preview} />
+          <ListItem category="Git: " arr={git} />
+          <ListItem category="Pozostałe: " arr={extenstionsNames} />
+        </ol>
       </Post>
     </article>
   </Layout>
