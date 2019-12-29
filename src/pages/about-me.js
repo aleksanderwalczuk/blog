@@ -18,17 +18,22 @@ export const Post = props => (
 
 export default () => (
   <Layout>
-    <h1 className="heading">O mnie, współpraca</h1>
+    <div className="aside">
+      <h1 className="heading">O mnie, współpraca</h1>
+    </div>
     <div className="about">
-      <Post postHeading="Krótko:" time={timeOld + ' ;-)'}>
+      <Post postHeading="Krótko:" time={timeOld + " ;-)"}>
         <div className="about-author">
           <img src={aboutImg} alt="author img" className="about-author-img" />
           <p className="post-paragraph about-author-paragraph">
             Nazywam się Aleksander Walczuk. Jestem programistą, tenisistą i
             narciarzem. Stworzyłem ten blog by podzielić się swoim podejściem do
             frontendu oraz pokazać jak to jest być początkującym w tej branży.
-            Chętnie współpracuję i uczę się nowych technologii. Masz pomysł na apkę?
-            Szukasz osób do pracy? Zapraszam, odwiedź zakładkę <Link to='./contact.js' className='post-link'>Kontakt.</Link>
+            Chętnie współpracuję i uczę się nowych technologii. Masz pomysł na
+            apkę? Szukasz osób do pracy? Zapraszam, odwiedź zakładkę{" "}
+            <Link to="./contact.js" className="post-link">
+              Kontakt.
+            </Link>
           </p>
         </div>
       </Post>
@@ -37,12 +42,13 @@ export default () => (
           Frontendu uczyłem się nieregularnie, zacząłem na początku 2018r.
           Jestem samoukiem, jednak pod koniec 2019r zdecydowałem się na
           uczestnictwo w bootcampie. Mam solidne podstawy w kodowaniu stron
-          statycznych, aktualnie poznaję JAM-Stacki. Moje  <strong>źródła wiedzy</strong> to:
-          FreeCodeCamp, Medium, MDN, kanały youtube takie jak: Traversy Media,
-          helloroman. Aktualnie poznaję Gatsby.js i GraphQL. Mój <strong>stack
-          technologiczny</strong> w tej chwili to HTML, CSS, Sass, JS ES6, React, Redux i
-          podstawy PHP. Brałem udział w warsztatach Webcamp #6, meetupach,
-          targach i bootcampie organizowanym przez infoShare Academy.
+          statycznych, aktualnie poznaję JAM-Stacki. Moje{" "}
+          <strong>źródła wiedzy</strong> to: FreeCodeCamp, Medium, MDN, kanały
+          youtube takie jak: Traversy Media, helloroman. Aktualnie poznaję
+          Gatsby.js i GraphQL. Mój <strong>stack technologiczny</strong> w tej
+          chwili to HTML, CSS, Sass, JS ES6, React, Redux i podstawy PHP. Brałem
+          udział w warsztatach Webcamp #6, meetupach, targach i bootcampie
+          organizowanym przez infoShare Academy.
         </p>
       </Post>
     </div>
