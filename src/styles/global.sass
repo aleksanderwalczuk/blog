@@ -34,7 +34,10 @@
     padding: .5rem
     display: inline-block
     text-align: center
-
+.aside
+  @include flex(center, normal, column)
+  & p
+    margin: .33rem 0
 .main
   max-width: 1024px
   min-height: calc(100vh - calc(73px + 1rem))
@@ -58,3 +61,6 @@
   &-paragraph
     padding: 1rem
     margin:  0 0 0.67em
+
+.footer
+  @include flex(center)
