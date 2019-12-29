@@ -30,7 +30,6 @@ export default () => (
             Chętnie współpracuję i uczę się nowych technologii. Masz pomysł na apkę?
             Szukasz osób do pracy? Zapraszam, odwiedź zakładkę <Link to='./contact.js' className='post-link'>Kontakt.</Link>
           </p>
-          <p className="post-paragraph"></p>
         </div>
       </Post>
       <Post postHeading="Trochę dłużej:" time={time}>
