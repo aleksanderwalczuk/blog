@@ -1,6 +1,6 @@
 import React from "react"
 
-const time = new Date().toLocaleDateString()
+const time = new Date(2019,12,28).toLocaleDateString('pl_PL')
 
 export const Post = (props) => (
   <section className="post">
