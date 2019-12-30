@@ -42,12 +42,12 @@ const Hamburger = () => {
   const [menuDisplay, setMenuDisplay] = useState(false)
   return (
     <>
-      <span className="hamburger-container" onClick={() =>
+      <span className="hamburger-container" role="button" tabIndex="0" onClick={() =>
         setMenuDisplay(!menuDisplay)
-      }>
-        <span className="hamburger-inner"></span>
-        <span className="hamburger-inner"></span>
-        <span className="hamburger-inner"></span>
+      } onKeyPress={(e) => e.code === "KeyO" ? setMenuDisplay(!menuDisplay) : ''}>
+        <span className="hamburger-inner" role="img" aria-label="nav"></span>
+        <span className="hamburger-inner" role="img" aria-label="nav"></span>
+        <span className="hamburger-inner" role="img" aria-label="nav"></span>
       </span>
       <HamburgerMenu visible={menuDisplay} />
     </>
