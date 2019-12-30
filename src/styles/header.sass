@@ -44,3 +44,21 @@
         margin-top: 0
       &:last-child
         margin-bottom: 0
+  .modal-container
+    position: absolute
+    top: 63px
+    left: 0
+    justify-content: center
+    align-items: center
+    width: 100vw
+    height: calc( 100vh - 63px )
+    background: #fff0cf
+    .nav-container-mobile
+      @include flex(space-around, center, column)
+      min-height: 400px
+      padding: 0
+      list-style: none
+      .navlink
+        color: #000
+        text-decoration: none
+        font-size: 24px
