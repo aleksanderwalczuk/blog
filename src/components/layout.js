@@ -13,17 +13,17 @@ const HamburgerMenu = props => (
     <ul className="nav-container-mobile">
       <li className="nav-item">
         <Link to="./" className="navlink">
-          link-1
+        &#128214; Home
         </Link>
       </li>
       <li className="nav-item">
         <Link to="./" className="navlink">
-          link-2
+        &#128373; O mnie
         </Link>
       </li>
       <li className="nav-item">
         <Link to="./" className="navlink">
-          link-3
+        &#128237; Kontakt
         </Link>
       </li>
     </ul>
