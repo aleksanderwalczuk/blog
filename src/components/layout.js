@@ -9,12 +9,21 @@ const NavLink = props => (
   </li>
 )
 
+const Hamburger = () => (
+<span className="hamburger-container">
+  <span className="hamburger-inner"></span>
+  <span className="hamburger-inner"></span>
+  <span className="hamburger-inner"></span>
+</span>
+)
+
 export default ({ children }) => (
   <div className="wrapper">
     <header className="header">
       <Link to="/" style={{ textShadow: "none", backgroundImage: "none" }} className='header-logo'>
         <h3 className='heading header-heading'>aleksanderwalczuk.surge.sh</h3>
       </Link>
+      <Hamburger/>
       <ul>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/about-me">O mnie</NavLink>
