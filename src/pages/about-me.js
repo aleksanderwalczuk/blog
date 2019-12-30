@@ -26,12 +26,12 @@ export default () => (
         <div className="about-author">
           <img src={aboutImg} alt="author img" className="about-author-img" />
           <p className="post-paragraph about-author-paragraph">
-            Nazywam się Aleksander Walczuk. Jestem programistą, tenisistą i
-            narciarzem. Stworzyłem ten blog by podzielić się swoim podejściem do
-            frontendu oraz pokazać jak to jest być początkującym w tej branży.
-            Chętnie współpracuję i uczę się nowych technologii. Masz pomysł na
-            apkę? Szukasz osób do pracy? Zapraszam, odwiedź zakładkę{" "}
-            <Link to="./contact.js" className="post-link">
+            Cześć nazywam się Aleksander. Jestem programistą, tenisistą i
+            narciarzem. Piszę tutaj o tym czego się uczę jako początkujący
+            frontendowiec i jak wygląda mój sposób pracy. Chętnie współpracuję i
+            uczę się nowych technologii. Masz pomysł na apkę? Szukasz osób do
+            pracy? Zapraszam, odwiedź zakładkę{" "}
+            <Link to="./contact" className="post-link">
               Kontakt.
             </Link>
           </p>
