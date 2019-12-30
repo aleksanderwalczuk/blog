@@ -1,0 +1,26 @@
+.header
+  position: fixed
+  top: 0
+  left: 0
+  @include flex(space-between, center)
+  margin: 0 0 1rem 0
+  width: 100vw
+  padding: 1rem
+  background-color: purple
+  &-logo
+    text-decoration: none
+    color: #fff
+    cursor: pointer
+    &:visited
+      color: #fff
+  &-heading
+    display: inline
+  & ul
+    margin: 0
+@media screen and ( max-width: 480px )
+  .header
+    flex-direction: column
+    &-heading
+      font-size: 20px
+    & ul
+      padding: 0
