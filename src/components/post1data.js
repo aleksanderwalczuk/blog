@@ -42,7 +42,7 @@ export const preview = [
   { name: "Image preview", description: " - wyświetla miniaturki obrazków " },
 ]
 export const extenstionsNames = [
-  { name: "Bracket Pair Colorizer", description: " - koloruje nawiasy w zależności od " },
+  { name: "Bracket Pair Colorizer", description: " - koloruje nawiasy w zależności od poziomu zagnieżdżenia" },
   { name: "Debugger for Chrome", description: "" },
   { name: "ES Lint", description: "" },
   { name: "indent-rainbow", description: " - koloruje indentację" },
