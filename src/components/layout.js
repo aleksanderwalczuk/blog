@@ -8,24 +8,33 @@ const NavLink = props => (
     </Link>
   </li>
 )
+
+const HamburgerLink = props => (
+  <li className="nav-item">
+  <Link to={`./${props.to}`} className="navlink">
+<span role="img" aria-label="emoji">{props.emoji}</span> {props.name}
+  </Link>
+</li>
+)
+
 const HamburgerMenu = props => (
   <div className="modal-container" style={{ display: props.visible? 'flex' : 'none' }}>
     <ul className="nav-container-mobile">
-      <li className="nav-item">
-        <Link to="./" className="navlink">
-        &#128214; Home
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link to="./" className="navlink">
-        &#128373; O mnie
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link to="./" className="navlink">
-        &#128237; Kontakt
-        </Link>
-      </li>
+      <HamburgerLink
+      name="Home"
+      to="./"
+      emoji="&#128214;"
+      />
+      <HamburgerLink
+      name="O mnie"
+      to="./about-me"
+      emoji="&#128373;"
+      />
+      <HamburgerLink
+      name="Kontakt"
+      to="./contact"
+      emoji="&#128237;"
+      />
     </ul>
   </div>
 )
